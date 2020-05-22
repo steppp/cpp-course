@@ -18,7 +18,7 @@ int main() {
 	delete d_ptr;
 	delete sub_int_ptr;
 
-	if (int_ptr <= 0) {
+	if (*int_ptr <= 0) {
 		return 1;
 	}
 
@@ -33,5 +33,5 @@ int main() {
 
 	// remember to free the memory
 	// the `delete` expression for both arrays and "normal" pointers returns VOID
-	delete values;
+	delete[] values;
 }
